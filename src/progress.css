@@ -1,0 +1,125 @@
+:root {
+  --gris: #2d2b2b;
+  --amarillo: #eab224;
+  --gris__suave: #76736b;
+  --fuentePrincipal: "Inter", sans-serif;
+  --fuenteSecundaria: "Alkatra", cursive;
+}
+/* BARRAS CIRULARES */
+
+.all {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+@media (min-width: 860px) {
+  .all {
+    flex-direction: row;
+  }
+
+}
+
+@media (min-width: 860px) {
+  .languages__container {
+    position: absolute;
+    left: 600px;
+    bottom: 20px;
+  }
+}
+.circular-wrap {
+  margin: 1rem;
+  width: 10rem;
+  height: 10rem;
+  background-color: white;
+  border-radius: 50%;
+}
+.circular-wrap .circle .mask,
+.circular-wrap .circle .fill-1,
+.circular-wrap .circle .fill-2,
+.circular-wrap .circle .fill-3 {
+  width: 10rem;
+  height: 10rem;
+  position: absolute;
+  border-radius: 50%;
+}
+.circular-wrap .circle .mask {
+  clip: rect(0rem, 10rem, 10rem, 5rem);
+}
+
+/* animacion */
+.mask .fill-1 {
+  clip: rect(0rem 5rem 10rem 0rem);
+  background-color: var(--amarillo);
+}
+.mask.full-1,
+.circle .fill-1 {
+  animation: fill-1 ease-in-out 3s;
+  transform: rotate(180deg);
+}
+@keyframes fill-1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(180deg);
+  }
+}
+/* animacion */
+.mask .fill-2 {
+  clip: rect(0rem 5rem 10rem 0rem);
+  background-color: var(--amarillo);
+}
+.mask.full-2,
+.circle .fill-2 {
+  animation: fill-2 ease-in-out 3s;
+  transform: rotate(108deg);
+}
+@keyframes fill-2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(108deg);
+  }
+}
+/* animacion */
+.mask .fill-3 {
+  clip: rect(0rem 5rem 10rem 0rem);
+  background-color: var(--amarillo);
+}
+.mask.full-3,
+.circle .fill-3 {
+  animation: fill-3 ease-in-out 3s;
+  transform: rotate(81deg);
+}
+@keyframes fill-3 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(81deg);
+  }
+}
+.circle {
+  position: relative;
+  height: 10rem; /* Establece una altura para el contenedor */
+  width: 10rem; /* Establece una anchura para el contenedor */
+  display: flex; /* Agrega display flex para centrar en ambos ejes */
+  justify-content: center;
+  align-items: center;
+}
+.inside-circle {
+  position: absolute;
+  background-color: var(--gris);
+  border-radius: 50%;
+  width: 8rem;
+  height: 8rem;
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FIN BARRAS CIRCULARES */

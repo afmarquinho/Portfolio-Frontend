@@ -26,8 +26,8 @@ body {
   line-height: 1.8;
   background: linear-gradient(
     to right,
-    #333333 0 25%,
-    var(--primario) 25% 100%
+    #333333 0 20%,
+    var(--primario) 20% 100%
   );
   overflow-x: hidden;
 }
@@ -84,7 +84,7 @@ img {
 }
 .circulosContenedor5 {
   bottom: 200px;
-  left: 160px;
+  left: 360px;
   width: 50px;
   height: 50px;
 }
@@ -95,8 +95,8 @@ img {
   height: 50px;
 }
 .circulosContenedor7 {
-  bottom: 400px;
-  left: 120px;
+  bottom: 200px;
+  left: 300px;
   width: 150px;
   height: 150px;
 }
@@ -105,4 +105,20 @@ img {
   right: 500px;
   width: 70px;
   height: 70px;
+}
+.circulosContenedor9 {
+  bottom: 30px;
+  right: 500px;
+  width: 70px;
+  height: 70px;
+}.circulosContenedor10 {
+  top: 40px;
+  right: 800px;
+  width: 70px;
+  height: 70px;
+}.circulosContenedor11 {
+  top: 200px;
+  right: 600px;
+  width: 90px;
+  height: 90px;
 }

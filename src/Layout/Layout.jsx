@@ -32,6 +32,15 @@ const Layout = ({ children }) => {
       <CirculosContenedor className="circulosContenedor8 ">
         <Circulo />
       </CirculosContenedor> 
+      <CirculosContenedor className="circulosContenedor9 ">
+        <Circulo />
+      </CirculosContenedor> 
+      <CirculosContenedor className="circulosContenedor10 ">
+        <Circulo />
+      </CirculosContenedor> 
+      <CirculosContenedor className="circulosContenedor11 ">
+        <Circulo />
+      </CirculosContenedor> 
     </>
   );
 };
