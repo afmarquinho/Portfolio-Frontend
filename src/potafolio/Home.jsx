@@ -21,7 +21,7 @@ const Home = () => {
               </aside>
               <section className="col-12 col-lg-5 col-xl-6 ">
                 <div className="article article1 my-5">
-                  <h2 id="doForU" className="title position-sticky">
+                  <h2 id="doForU" className="title">
                     What Can I do for you?
                   </h2>
                   <p className="content text-justify">
@@ -32,7 +32,7 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="article article2 my-5">
-                  <h2 className="about__me" id="about-me">
+                  <h2 className="title about__me" id="about-me">
                     About me
                   </h2>
                   <h3 className="summary">Summary</h3>
@@ -118,7 +118,7 @@ const Home = () => {
                 </div>
 
                 <div className="article article2 my-5">
-                  <h2 className="portfolio" id="portfolio">
+                  <h2 className="title portfolio" id="portfolio">
                     Portfolio
                   </h2>
                   <div className="project project1">
@@ -171,6 +171,7 @@ const Home = () => {
                       <span className="">Axios</span>
                       <span className="">Express</span>
                       <span className="">Mongo DB</span>
+                      
                     </p>
                   </div>
                 </div>

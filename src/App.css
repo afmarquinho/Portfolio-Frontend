@@ -143,6 +143,10 @@ img {
 }
 
 /* //*ROW */
+.row section {
+  position: static;
+}
+
 @media (min-width: 992px) {
   main {
       padding-top: 10rem;
@@ -190,6 +194,14 @@ img {
 /* //*FIN ASIDE */
 
 /* //*SECTION */
+.title{
+  position: -webkit-sticky;
+  position: sticky;
+  top: -1px;
+  background-color: var(--fondo);
+  padding: 1rem 0;
+  z-index: 500;
+}
 .portfolio{
   color: var(--resaltado)
 }
