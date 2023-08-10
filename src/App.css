@@ -43,9 +43,11 @@ h2 {
   margin: 2rem 0;
 }
 h3 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin: 1rem 0;
+  font-weight: bold;
 }
+
 a {
   text-decoration: none;
   color: var(--navbar);
@@ -175,14 +177,7 @@ img {
     overflow: auto;
   }
 }
-/* TODO: VERIFICAR LA RESPONSIBIDAD EN TAMAÑOS MAS GRANDES */
-/* @media (min-width: 1400px) {
-  .row section {
-    right: 15rem;
-    top:95px;
-  
-  }
-} */
+
 
 /* //*FIN ROW*/
 
@@ -190,6 +185,9 @@ img {
 
 .make__happen span {
   color: var(--amarillo);
+}
+.redes__sociales2{
+  gap:1rem;
 }
 /* //*FIN ASIDE */
 
