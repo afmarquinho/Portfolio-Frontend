@@ -1,175 +1,177 @@
-import React from "react";
-import Layout from "../Layout/Layout";
-import { Link } from "react-router-dom";
-import styled from "@emotion/styled";
-import foto from "../assets/foto5.jpg";
+import Navbar from "./Navbar";
 
 const Home = () => {
   return (
     <>
-      <Layout>
-        <>
-          <Contenedor>
-            <IMGContenedor className="imagen-contenedor">
-              <IMG src={foto} alt="imagen" />
-            </IMGContenedor>
-            <Info>
-              <p className="mi_nombre">Marco Fernández</p>
-              <p className="front">MERN Stack Developer</p>
-              <p className="profession">Industrial Administrator</p>
-              <p className="make__happen">
+      <Navbar />
+      <main>
+        <div className="container">
+          <div className="row d-flex justify-btw">
+            <aside className="col-12 col-lg-3 col-xl-4 ">
+              <h1 className="mi_nombre">Marco Fernández</h1>
+              <p className="front m-0">MERN Stack Developer</p>
+              <p className="profession m-0">Industrial Administrator</p>
+              <p className="make__happen m-0">
                 <span className="make"> &lt;make&gt;</span> it happen
-                <span className="make">&lt;/make&lt;</span>
+                <span className="make">&lt;/make&gt;</span>
               </p>
-              <Info2 className="doForYou-container">
-                <p id="doForU" className="title">
+            </aside>
+            <section className="col-12 col-lg-5 col-xl-6 ">
+              <div className="article article1 my-5">
+                <h2 id="doForU" className="title position-sticky">
                   What Can I do for you?
-                </p>
-                <p className="content">
+                </h2>
+                <p className="content text-justify">
                   I have a solid foundation in HTML, CSS, and JavaScript, and I
                   am eager to apply my skills to your project. I can create
                   responsive, user-friendly websites and applications that
                   provide an exceptional user experience.
                 </p>
-              </Info2>
-            </Info>
-          </Contenedor>
+              </div>
+              <div className="article article2 my-5">
+                <h2 className="about__me" id="about-me">
+                  About me
+                </h2>
+                <h3 className="summary">Summary</h3>
+                <p className="text-justify">
+                  I have a good understanding of HTML, CSS, and JavaScript, and
+                  I'm familiar with popular front-end frameworks such as React.
+                  I stay up to date with industry trends and best practices, I
+                  am also dedicated to improving my skills and seeking feedback
+                  from more experienced developers.
+                </p>
+                <p className="text-justify">
+                  I'm able to work closely with designers, back-end developers,
+                  and other stakeholders on web development projects.work well
+                  in a team and am passionate about web development.
+                </p>
+                <h3 className="education">Education</h3>
+                <p>
+                  <ul>
+                    <li>
+                      {" "}
+                      Front-End developer - course - Alura Ltam - current.
+                    </li>
+                    <li> Programming - course - MinTic - Uninorte - 2022.</li>
+                    <li>
+                      {" "}
+                      Industrial Administration - Bachelor degree - 2013.
+                    </li>
+                  </ul>
+                </p>
+                <h3 className="info">More Info</h3>
+                <ul>
+                  <li>Based on Colombia.</li>
+                  <li>Available to travel.</li>
+                  <li>Hobbies: MMA - Swimming - Exercising.</li>
+                </ul>
+                <h2 className="languages">Languages</h2>
+                <div className="all">
+                  <div className="circular-wrap">
+                    <div className="circle">
+                      <div className="mask full-1">
+                        <div className="fill-1"></div>
+                      </div>
 
-          <Button className="more__info" type="buton">
-            <Link className="more__info__a" href="portfolio.html">
-              My Work
-            </Link>
-          </Button>
-        </>
-      </Layout>
+                      <div className="mask half">
+                        <div className="fill-1"></div>
+                      </div>
+                      <div className="inside-circle">
+                        <div> 100% Spanish</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="circular-wrap">
+                    <div className="circle">
+                      <div className="mask full-2">
+                        <div className="fill-2"></div>
+                      </div>
+
+                      <div className="mask half">
+                        <div className="fill-2"></div>
+                      </div>
+                      <div className="inside-circle">
+                        <div>65% English</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="circular-wrap">
+                    <div className="circle">
+                      <div className="mask full-3">
+                        <div className="fill-3"></div>
+                      </div>
+
+                      <div className="mask half">
+                        <div className="fill-3"></div>
+                      </div>
+                      <div className="inside-circle">
+                        <div> 45% Portug.</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="article article2 my-5">
+                <h2 className="Portfolio" id="about-me">
+                  Portfolio
+                </h2>
+                <div className="project project1">
+                  <h3 className="tasky">TASKY</h3>
+                  <p className="text-justify">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Error corporis deleniti a eveniet delectus officiis
+                    doloribus voluptatibus, eos illum accusamus.
+                    <a href="www.google.com" className="see-project mx-3">CHECK</a>
+                    <br />
+                    <span className="">React</span>
+                    <span className="">Styled-Components</span>
+                    <span className="">Localhost</span>
+                  </p>
+                </div>
+                <div className="project project2">
+                  <h3 className="lean-gineers">LEAN GINEERS WEB SITE</h3>
+                  <p className="text-justify">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Error corporis deleniti a eveniet delectus officiis
+                    doloribus voluptatibus, eos illum accusamus.
+                    <a href="www.google.com" className="see-project mx-3">CHECK</a>
+                    <br />
+                    <span className="">React</span>
+                    <span className="">Styled-Components</span>
+                    <span className="">Bootstrap</span>
+                    <span className="">Axios</span>
+                    <span className="">Express</span>
+                    <span className="">Mongo DB</span>
+                    
+                  </p>
+                </div>
+                <div className="project project2">
+                  <h3 className="Kassya Projects">KASSYA PROJECTS</h3>
+                  <p className="text-justify">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Error corporis deleniti a eveniet delectus officiis
+                    doloribus voluptatibus, eos illum accusamus.
+                    <a href="www.google.com" className="see-project mx-3">CHECK</a>
+                    <br />
+                    <span className="">React</span>
+                    <span className="">Styled-Components</span>
+                    <span className="">Bootstrap</span>
+                    <span className="">Context-API</span>
+                    <span className="">Axios</span>
+                    <span className="">Express</span>
+                    <span className="">Mongo DB</span>
+                    
+                  </p>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </main>
     </>
   );
 };
 
 export default Home;
-
-const Contenedor = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-`;
-
-const IMGContenedor = styled.div`
-  width: 18%;
-  overflow: hidden;
-`;
-const IMG = styled.img``;
-
-const Info = styled.div`
-  display: flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  align-items: start;
-  width: 70%;
-
-  p {
-    margin: 0;
-  }
-  .mi_nombre {
-    letter-spacing: 2.5rem;
-    font-weight: 900;
-    color: #77dd77;
-    font-size: 6rem;
-    line-height: 7rem;
-    margin-bottom: 1.5rem;
-    @media (max-width: 768px) {
-      padding-top: 6rem;
-      font-size: 4rem;
-      letter-spacing: 1rem;
-      line-height: 5rem;
-      @media (max-width: 400px) {
-        font-size: 3rem;
-        letter-spacing: 1rem;
-        line-height: 4rem;
-      }
-    }
-  }
-  .front {
-    color: white;
-    font-weight: bold;
-    font-size: 2rem;
-    @media (max-width: 768px) {
-      font-size: 1.5rem;
-    }
-  }
-  .profession {
-    color: #77dd77;
-    font-weight: 900;
-    font-size: 2rem;
-    @media (max-width: 768px) {
-      font-size: 1.5rem;
-    }
-  }
-  .make__happen {
-    color: white;
-    font-style: italic;
-    font-size: 2rem;
-    @media (max-width: 768px) {
-      font-size: 1.5rem;
-    }
-    .make {
-      color: #fda500;
-    }
-  }
-`;
-const Info2 = styled.div`
-  width: 80%;
-  @media (max-width: 768px) {
-    width: 90%;
-  }
-  margin-top: 2rem;
-  .title {
-    color: #77dd77;
-    font-weight: bold;
-    font-size: 2.5rem;
-    @media (max-width: 768px) {
-      font-size: 2rem;
-    }
-  }
-  .content {
-    color: white;
-    text-align: justify;
-    font-size: 2rem;
-    @media (max-width: 768px) {
-      font-size: 1.5rem;
-    }
-  }
-`;
-const Button = styled.button`
-  background-color: #1f1e1e;
-  border: none;
-  height: 5rem;
-  width: 15rem;
-  border-radius: 10px;
-  cursor: pointer;
-  position: absolute;
-  bottom: 3rem;
-  right: 5rem;
-  transition: transform 0.5s ease;
-  @media (max-width: 768px) {
-    height: 3rem;
-    width: 12rem;
-  }
-  :hover {
-    transform: scale(1.2);
-    background-color: #777777;
-  }
-
-  .more__info__a {
-    text-decoration: none;
-    color: white;
-    font-weight: bold;
-    position: relative;
-    height: 5rem;
-    width: 15rem;
-    @media (max-width: 768px) {
-     font-size: 1.5rem;
-    }
-  }
-`;

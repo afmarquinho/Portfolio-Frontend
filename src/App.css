@@ -1,15 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;900&family=Numans&display=swap");
 
 :root {
-  --primario: #575656 ;
-  --amarillo: #fda500;
   --fuentePrincipal: "Inter", sans-serif;
-  --rojo-brillante: #ff6b6b;
-  --verde-llamativo: #77dd77;
-  --amarillo-intenso: #ffd700;
+  --resaltado: #00c3ff;
+  --primario: #d3d9f3;
+  --navbar: #f3d3d3;
+  --amarillo: #fda500;
+  --fondo: #07070f;
   --azul-eléctrico: #1e90ff;
-  --naranja-audaz: #ffa500;
-  --otro: #282a36;
 }
 html {
   font-size: 62.5%;
@@ -24,101 +22,183 @@ body {
   font-family: var(--fuentePrincipal);
   font-size: 1.6rem;
   line-height: 1.8;
-  background: linear-gradient(
-    to right,
-    #333333 0 20%,
-    var(--primario) 20% 100%
-  );
-  overflow-x: hidden;
+  background-color: var(--fondo);
+  color: var(--primario);
 }
 h1,
 h2,
 h3 {
   font-weight: 900;
-  margin: 2rem 0;
 }
 h1 {
   font-size: 2rem;
-  font-family: var(--fuentePrincipal);
+  font-family: var(--fuenteLogo);
+  color: var(--primario);
+  font-weight: bold;
+  margin: 2rem 0;
 }
 h2 {
-  font-size: 4.6rem;
+  font-size: 1.8rem;
+  margin: 2rem 0;
 }
 h3 {
-  font-size: 3rem;
+  font-size: 1.4rem;
+  margin: 1rem 0;
 }
 a {
   text-decoration: none;
+  color: var(--navbar);
 }
 img {
   max-width: 100%;
   display: block;
 }
 
-/* Backgroud */
+/* //*GLOBAL UTILITIES */
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+  width: 90%;
+}
+.d-flex {
+  display: flex;
+}
 
-/* CIRCULOS DEL BACKGROUND */
-.circulosContenedor1 {
-  top: 80px;
-  right: 40px;
-  width: 100px;
-  height: 100px;
+.d-flex-column {
+  display: flex;
+  flex-direction: column;
 }
-.circulosContenedor2 {
-  bottom: 100px;
-  right: 400px;
-  width: 50px;
-  height: 50px;
+.justify-btw {
+  justify-content: space-between;
 }
-.circulosContenedor3 {
-  top: 100px;
-  right: 200px;
-  width: 60px;
-  height: 60px;
+.justify-end {
+  justify-content: flex-end;
 }
-.circulosContenedor4 {
-  top: 300px;
-  right: 40px;
-  width: 30px;
-  height: 30px;
+
+.justify-start {
+  justify-content: flex-start;
 }
-.circulosContenedor5 {
-  bottom: 200px;
-  left: 360px;
-  width: 50px;
-  height: 50px;
+.justify-evn {
+  justify-content: space-evenly;
 }
-.circulosContenedor6 {
-  bottom: 150px;
-  right: 60px;
-  width: 50px;
-  height: 50px;
+.justify-center {
+  justify-content: center;
 }
-.circulosContenedor7 {
-  bottom: 200px;
-  left: 300px;
-  width: 150px;
-  height: 150px;
+.align-center {
+  align-items: center;
 }
-.circulosContenedor8 {
-  top: 340px;
-  right: 500px;
-  width: 70px;
-  height: 70px;
+.align-top {
+  align-items: flex-start;
 }
-.circulosContenedor9 {
-  bottom: 30px;
-  right: 500px;
-  width: 70px;
-  height: 70px;
-}.circulosContenedor10 {
-  top: 40px;
-  right: 800px;
-  width: 70px;
-  height: 70px;
-}.circulosContenedor11 {
-  top: 200px;
-  right: 600px;
-  width: 90px;
-  height: 90px;
+.text-center {
+  text-align: center;
 }
+
+.bg-primario {
+  background-color: var(--primario);
+}
+.bg-secundario {
+  background-color: var(--secondary);
+}
+.m-0 {
+  margin: 0;
+}
+.p-0 {
+  padding: 0;
+}
+.m-0-auto {
+  margin: 0 auto;
+}
+.text-white {
+  color: white;
+}
+.text-black {
+  color: black;
+}
+.text-primario {
+  color: var(--primario);
+}
+.wdt-100 {
+  width: 100%;
+}
+.hgt-100 {
+  height: 100%;
+}
+.ovf-hidden {
+  overflow: hidden;
+}
+.fst-italic {
+  font-style: italic;
+}
+.obj-fit-cover {
+  object-fit: cover;
+}
+/* //*SPECIFIC UTILITIES */
+.text-justify {
+  text-align: justify;
+}
+.position-sticky {
+  position: sticky;
+}
+
+/* //*ROW */
+@media (min-width: 992px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .row .col-12 {
+    box-sizing: border-box;
+  }
+  .row aside {
+    width: 35rem;
+    margin-left: 10rem;
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .row section {
+    position: absolute;
+    right: 10rem;
+    top: 0;
+    margin-top: 80px;
+    overflow: auto;
+  }
+}
+/* TODO: VERIFICAR LA RESPONSIBIDAD EN TAMAÑOS MAS GRANDES */
+/* @media (min-width: 1400px) {
+  .row section {
+    right: 15rem;
+    top:95px;
+  
+  }
+} */
+
+/* //*FIN ROW*/
+
+/* //*ASIDE */
+
+.make__happen span {
+  color: var(--amarillo);
+}
+/* //*FIN ASIDE */
+
+/* //*SECTION */
+.project h3 {
+  color: var(--amarillo);
+  margin: 2.5rem 0 0 0;
+}
+.project .see-project {
+  color: var(--resaltado);
+}
+.project span{
+  color: var(--resaltado);
+  /* background-color: #00c3ff3d; */
+  text-shadow: 2px 2px 4px #00c3ff;
+  border-radius: 20px;
+  margin-right: 1rem;
+}
+
+/* //*FIN SECTION */

@@ -1,49 +1,23 @@
-import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { styled } from "styled-components";
 
 const Navbar = () => {
-  const [isVisible, setIsVisible] = useState(false);
-
-  const toggleNavbar = () => {
-    setIsVisible(!isVisible);
-  };
-
-  const home = () => {
-    setIsVisible(!isVisible);
-  };
-  const about = () => {
-    setIsVisible(!isVisible);
-  };
-  const iDo = () => {
-    setIsVisible(!isVisible);
-  };
-  const portfolio = () => {
-    setIsVisible(!isVisible);
-  };
-  const contact = () => {
-    setIsVisible(!isVisible);
-  };
-
   return (
     <>
-      <NAV className="nav" isVisible={isVisible}>
-        <StyledLink className="link" to="/" onClick={home}>
+      <NAV className="nav">
+        <StyledLink className="link" href="#doForU">
           HOME
         </StyledLink>
-        <StyledLink className="link" to="/about" onClick={about}>
+        <StyledLink className="link" href="#about-me">
           {" "}
           <span>About me</span>
         </StyledLink>
-        <StyledLink className="link i__do"  to="/what-i-do" onClick={iDo}>
-          {" "}
-          <span>What I do </span>
-        </StyledLink>
-        <StyledLink className="link" to="/portfolio"onClick={portfolio}>
+
+        <StyledLink className="link" href="/portfolio">
           {" "}
           <span>Portfolio</span>
         </StyledLink>
-        <StyledLink className="link" to="/contact-me"onClick={contact}>
+        <StyledLink className="link" href="/contact-me">
           {" "}
           <span>Contact me</span>
         </StyledLink>
@@ -52,49 +26,11 @@ const Navbar = () => {
           href="https://drive.google.com/uc?export=download&id=11AYxLF7h9fThXf2c0BJcIGfWrNKh-gDn"
           target="_blank"
           download
-          onClick={about}
         >
           {" "}
           <span>Download CV</span>
         </StyledLink>
       </NAV>
-      <Menu className="btn-menu" onClick={toggleNavbar}>
-        {isVisible ? (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="#ffffff"
-            className="w-6 h-6"
-            height="30"
-            width="30"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M6 18L18 6M6 6l12 12"
-            />
-          </svg>
-        ) : (
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            strokeWidth={1.5}
-            stroke="#ffffff"
-            className="w-6 h-6"
-            height="30"
-            width="30"
-          >
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"
-            />
-          </svg>
-        )}
-      </Menu>
     </>
   );
 };
@@ -102,30 +38,23 @@ const Navbar = () => {
 export default Navbar;
 
 const NAV = styled.nav`
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  width: 100%;
-  max-width: 120rem;
-  padding: 2rem;
-  @media (max-width: 768px) {
-    position: absolute;
-    z-index: 1000;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: #204351;
-    height: 100vh;
-    padding-top: 10rem;
+  display: none;
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    max-width: 120rem;
+    padding: 2rem;
+    position: fixed;
     top: 0;
     right: 0;
-    transition: transform 0.5s ease-in-out;
-    transform-origin: right;
-    transform: ${({ isVisible }) =>
-      isVisible ? "translateX(0)" : "translateX(100%)"};
+    z-index: 1000;
+    background-color: #07070f;
   }
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled.a`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -137,8 +66,6 @@ const StyledLink = styled(Link)`
   width: 11.5rem;
   border-radius: 20px;
   padding: 1rem;
-  /* background-color: #444343; */
-  color: #bebdbd;
 
   &::before {
     content: "";
@@ -178,19 +105,5 @@ const StyledLink = styled(Link)`
       transform: scaleY(1);
       opacity: 1;
     }
-  }
-`;
-const Menu = styled.button`
-  position: absolute;
-  margin: 0;
-  padding: 0;
-  background-color: transparent;
-  border: none;
-  top: 3rem;
-  right: 3rem;
-  z-index: 1500;
-  cursor: pointer;
-  @media (min-width: 768px) {
-    display: none;
   }
 `;
