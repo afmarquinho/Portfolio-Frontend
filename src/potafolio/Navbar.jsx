@@ -13,11 +13,11 @@ const Navbar = () => {
           <span>About me</span>
         </StyledLink>
 
-        <StyledLink className="link" href="/portfolio">
+        <StyledLink className="link" href="#portfolio">
           {" "}
           <span>Portfolio</span>
         </StyledLink>
-        <StyledLink className="link" href="/contact-me">
+        <StyledLink className="link" href="#contact-me">
           {" "}
           <span>Contact me</span>
         </StyledLink>
@@ -41,16 +41,17 @@ const NAV = styled.nav`
   display: none;
   @media (min-width: 992px) {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items: center;
     width: 100vw;
-    max-width: 120rem;
     padding: 2rem;
     position: fixed;
-    top: 0;
-    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: 1000;
     background-color: #07070f;
+    height: 8rem;
+    border-top: 1px solid #fda500;
   }
 `;
 
@@ -74,8 +75,8 @@ const StyledLink = styled.a`
     left: 0;
     width: 100%;
     height: 100%;
-    border-top: 2px solid #4ec1dc;
-    border-bottom: 2px solid #4ec1dc;
+    border-top: 2px solid #fda500;
+    border-bottom: 2px solid #fda500;
     transition: 0.5s;
     transform: scaleY(2);
     opacity: 0;
@@ -88,14 +89,14 @@ const StyledLink = styled.a`
     width: 100%;
     height: 100%;
 
-    background: #4ec1dc;
+    background: #fda500;
     transition: 0.5s;
     transform: scale(0);
     opacity: 0;
     z-index: -1;
   }
   &:hover {
-    color: #ffffff;
+    color:  #07070f;
     font-weight: bold;
     &::before {
       transform: scale(1);

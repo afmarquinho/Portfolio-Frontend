@@ -1,9 +1,9 @@
 :root {
-  --gris: #2d2b2b;
-  --amarillo: #eab224;
-  --gris__suave: #76736b;
-  --fuentePrincipal: "Inter", sans-serif;
-  --fuenteSecundaria: "Alkatra", cursive;
+  --fondo: #07070f;
+  --resaltado: #00c3ff;
+  --primario: #d3d9f3;
+ 
+
 }
 /* BARRAS CIRULARES */
 
@@ -28,28 +28,28 @@
 }
 .circular-wrap {
   margin: 1rem;
-  width: 10rem;
-  height: 10rem;
-  background-color: white;
+  width: 8rem;
+  height: 8rem;
+  background-color: var(--primario);
   border-radius: 50%;
 }
 .circular-wrap .circle .mask,
 .circular-wrap .circle .fill-1,
 .circular-wrap .circle .fill-2,
 .circular-wrap .circle .fill-3 {
-  width: 10rem;
-  height: 10rem;
+  width: 8rem;
+  height: 8rem;
   position: absolute;
   border-radius: 50%;
 }
 .circular-wrap .circle .mask {
-  clip: rect(0rem, 10rem, 10rem, 5rem);
+  clip: rect(0rem, 8rem, 8rem, 4rem);
 }
 
 /* animacion */
 .mask .fill-1 {
   clip: rect(0rem 5rem 10rem 0rem);
-  background-color: var(--amarillo);
+  background-color: var(--resaltado);
 }
 .mask.full-1,
 .circle .fill-1 {
@@ -67,7 +67,7 @@
 /* animacion */
 .mask .fill-2 {
   clip: rect(0rem 5rem 10rem 0rem);
-  background-color: var(--amarillo);
+  background-color: var(--resaltado);
 }
 .mask.full-2,
 .circle .fill-2 {
@@ -84,38 +84,38 @@
 }
 /* animacion */
 .mask .fill-3 {
-  clip: rect(0rem 5rem 10rem 0rem);
-  background-color: var(--amarillo);
+  clip: rect(0rem 4rem 10rem 0rem);
+  background-color: var(--resaltado);
 }
 .mask.full-3,
 .circle .fill-3 {
   animation: fill-3 ease-in-out 3s;
-  transform: rotate(81deg);
+  transform: rotate(80deg);
 }
 @keyframes fill-3 {
   0% {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(81deg);
+    transform: rotate(80deg);
   }
 }
 .circle {
   position: relative;
-  height: 10rem; /* Establece una altura para el contenedor */
-  width: 10rem; /* Establece una anchura para el contenedor */
+  height: 8rem; /* Establece una altura para el contenedor */
+  width: 8rem; /* Establece una anchura para el contenedor */
   display: flex; /* Agrega display flex para centrar en ambos ejes */
   justify-content: center;
   align-items: center;
 }
 .inside-circle {
   position: absolute;
-  background-color: var(--gris);
+  background-color: var(--fondo);
   border-radius: 50%;
-  width: 8rem;
-  height: 8rem;
-  font-size: 1.5rem;
-  color: white;
+  width: 6rem;
+  height: 6rem;
+  font-size: 1.2rem;
+  color:var(--primario);
   text-align: center;
   display: flex;
   align-items: center;
