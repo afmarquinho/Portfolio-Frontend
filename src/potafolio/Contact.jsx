@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import styled from "@emotion/styled";
+import axios from "axios";
 
 const Contact = () => {
   const [nombre, setNombre] = useState("");
@@ -10,30 +11,41 @@ const Contact = () => {
   const [alerta, setAlerta] = useState({});
   const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     if ([nombre, tel, email, asunto, mensaje].includes("")) {
       setAlerta({ msg: " No puede haber campos vacíos", error: true });
       return;
     }
-    setLoading(true);
-    
-    setTimeout(() => {
-      setAlerta({});
-      setNombre("");
-      setTel("");
-      setEmail("");
-      setAsunto("");
-      setMensaje("");
-      setAlerta({
-        msg: "¡Message sent!, I will contact you in a while.",
-        ok: true,
-      });      
-      setLoading(false);
-    }, 3000);
-    setTimeout(() => {
-      setAlerta({ });     
-    }, 6000);
+    try {
+      const { data } = await axios.post("http://localhost:4000/api/contact", {
+        name: nombre,
+        phone: tel,
+        email: email,
+        subject: asunto,
+        message: mensaje,
+      });
+      setLoading(true);
+
+      setTimeout(() => {
+        setAlerta({});
+        setNombre("");
+        setTel("");
+        setEmail("");
+        setAsunto("");
+        setMensaje("");
+        setAlerta({
+          msg: data.msg,
+          success: true,
+        });
+        setLoading(false);
+      }, 3000);
+      setTimeout(() => {
+        setAlerta({});
+      }, 6000);
+    } catch (error) {
+      console.log(error);
+    }
   };
   return (
     <>
@@ -49,14 +61,14 @@ const Contact = () => {
         </div>
         {loading ? (
           <>
-          <div class="sk-chase">
-            <div class="sk-chase-dot"></div>
-            <div class="sk-chase-dot"></div>
-            <div class="sk-chase-dot"></div>
-            <div class="sk-chase-dot"></div>
-            <div class="sk-chase-dot"></div>
-            <div class="sk-chase-dot"></div>
-          </div>
+            <div class="sk-chase">
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+              <div class="sk-chase-dot"></div>
+            </div>
           </>
         ) : (
           <Form action="" className="form" onSubmit={handleSubmit}>
