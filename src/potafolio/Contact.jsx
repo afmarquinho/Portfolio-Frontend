@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "@emotion/styled";
 import axios from "axios";
+
 
 const Contact = () => {
   const [nombre, setNombre] = useState("");
@@ -17,6 +18,7 @@ const Contact = () => {
       setAlerta({ msg: " No puede haber campos vacíos", error: true });
       return;
     }
+
     try {
       const { data } = await axios.post("http://localhost:4000/api/contact", {
         name: nombre,
@@ -26,6 +28,14 @@ const Contact = () => {
         message: mensaje,
       });
       setLoading(true);
+      socket = io(import.meta.env.VITE_BACKEND_URL);
+      socket.emit("prueba", {
+        nombre,
+        tel,
+        email,
+        asunto,
+        mensaje,
+      });
 
       setTimeout(() => {
         setAlerta({});
@@ -46,6 +56,7 @@ const Contact = () => {
     } catch (error) {
       console.log(error);
     }
+  
   };
   return (
     <>
@@ -61,13 +72,13 @@ const Contact = () => {
         </div>
         {loading ? (
           <>
-            <div class="sk-chase">
-              <div class="sk-chase-dot"></div>
-              <div class="sk-chase-dot"></div>
-              <div class="sk-chase-dot"></div>
-              <div class="sk-chase-dot"></div>
-              <div class="sk-chase-dot"></div>
-              <div class="sk-chase-dot"></div>
+            <div className="sk-chase">
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
+              <div className="sk-chase-dot"></div>
             </div>
           </>
         ) : (

@@ -2,7 +2,11 @@ import Navbar from "./Navbar";
 import Contact from "./Contact";
 import styled from "@emotion/styled";
 
+
+
 const Home = () => {
+ 
+  
   return (
     <>
       <Navbar />
@@ -101,19 +105,13 @@ const Home = () => {
                   in a team and am passionate about web development.
                 </p>
                 <h3 className="education">Education</h3>
-                <p>
-                  <ul>
-                    <li>
-                      {" "}
-                      Front-End developer - course - Alura Ltam - current.
-                    </li>
-                    <li> Programming - course - MinTic - Uninorte - 2022.</li>
-                    <li>
-                      {" "}
-                      Industrial Administration - Bachelor degree - 2013.
-                    </li>
-                  </ul>
-                </p>
+
+                <ul>
+                  <li> Front-End developer - course - Alura Ltam - current.</li>
+                  <li> Programming - course - MinTic - Uninorte - 2022.</li>
+                  <li> Industrial Administration - Bachelor degree - 2013.</li>
+                </ul>
+
                 <h3 className="info">More Info</h3>
                 <ul>
                   <li>Based on Colombia.</li>
