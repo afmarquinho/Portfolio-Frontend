@@ -54,8 +54,8 @@ const Contact = () => {
     <>
       <h2 className=" title contact__me">Contact me</h2>
       <Container>
-        <div className="content__container">
-          <div className="w-100">
+        <div className="content__container w-100">
+          <div>
             <H3 className="email">e-mail:</H3>
             <a className="email tel" href="mailto:fernandez9029@gmail.com" target="blank">
               fernandez9029@gmail.com
