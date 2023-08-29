@@ -23,7 +23,7 @@ const Navbar = () => {
         </StyledLink>
         <StyledLink
           className="link btn__download"
-          href="https://drive.google.com/uc?export=download&id=11AYxLF7h9fThXf2c0BJcIGfWrNKh-gDn"
+          // href="https://drive.google.com/uc?export=download&id=11AYxLF7h9fThXf2c0BJcIGfWrNKh-gDn"
           target="_blank"
           download
         >
@@ -34,6 +34,7 @@ const Navbar = () => {
     </>
   );
 };
+// TODO: DESCOMENTAR EL DESCARGUE DE LA HOJA DE VIDA
 
 export default Navbar;
 
