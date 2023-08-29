@@ -28,15 +28,7 @@ const Contact = () => {
         message: mensaje,
       });
       setLoading(true);
-      socket = io(import.meta.env.VITE_BACKEND_URL);
-      socket.emit("prueba", {
-        nombre,
-        tel,
-        email,
-        asunto,
-        mensaje,
-      });
-
+      
       setTimeout(() => {
         setAlerta({});
         setNombre("");
