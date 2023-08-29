@@ -48,7 +48,7 @@ const Contact = () => {
     } catch (error) {
       console.log(error);
     }
-  
+  // TODO: ARREGLAR EL ACCESO A LOS ICONOS Y LA FOTO
   };
   return (
     <>

@@ -1,12 +1,9 @@
 import Navbar from "./Navbar";
 import Contact from "./Contact";
 import styled from "@emotion/styled";
-
-
+import Foto from "./Foto";
 
 const Home = () => {
- 
-  
   return (
     <>
       <Navbar />
@@ -26,6 +23,7 @@ const Home = () => {
                 <div className="redes__sociales2 d-flex">
                   <a
                     href="https://www.linkedin.com/in/marcofern%C3%A1ndez/"
+                    target="_blank"
                     className="sociales linkedIn"
                   >
                     <svg
@@ -42,6 +40,7 @@ const Home = () => {
                   </a>
                   <a
                     href="https://github.com/afmarquinho"
+                    target="_blank"
                     className="sociales github"
                   >
                     <svg
@@ -57,22 +56,35 @@ const Home = () => {
                     </svg>
                   </a>
                   <a
-                    href="https://api.whatsapp.com/send?phone=573187794472&text=¡Hola,%20estoy%20interesado%20en%20tu%20portafolio?"
-                    className="sociales whatsapp"
+                    href="https://t.me/Marquinhos365"
+                    target="_blank"
+                    className="sociales telegram"
                   >
-                    <svg
+                      <svg
                       xmlns="http://www.w3.org/2000/svg"
+                      aria-label="Telegram"
+                      role="img"
                       width="24"
                       height="24"
-                      viewBox="0 0 24 24"
+                      viewBox="0 0 512 512"
                     >
+                      <rect width="512" height="512" rx="15%" fill="#eab224" />
                       <path
-                        d="M12.036 5.339c-3.635 0-6.591 2.956-6.593 6.589-.001 1.483.434 2.594 1.164 3.756l-.666 2.432 2.494-.654c1.117.663 2.184 1.061 3.595 1.061 3.632 0 6.591-2.956 6.592-6.59.003-3.641-2.942-6.593-6.586-6.594zm3.876 9.423c-.165.463-.957.885-1.337.942-.341.051-.773.072-1.248-.078-.288-.091-.657-.213-1.129-.417-1.987-.858-3.285-2.859-3.384-2.991-.099-.132-.809-1.074-.809-2.049 0-.975.512-1.454.693-1.653.182-.2.396-.25.528-.25l.38.007c.122.006.285-.046.446.34.165.397.561 1.372.611 1.471.049.099.083.215.016.347-.066.132-.099.215-.198.33l-.297.347c-.099.099-.202.206-.087.404.116.198.513.847 1.102 1.372.757.675 1.395.884 1.593.983.198.099.314.083.429-.05.116-.132.495-.578.627-.777s.264-.165.446-.099 1.156.545 1.354.645c.198.099.33.149.38.231.049.085.049.482-.116.945zm3.088-14.762h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-6.967 19.862c-1.327 0-2.634-.333-3.792-.965l-4.203 1.103 1.125-4.108c-.694-1.202-1.059-2.566-1.058-3.964.002-4.372 3.558-7.928 7.928-7.928 2.121.001 4.112.827 5.609 2.325s2.321 3.491 2.32 5.609c-.002 4.372-3.559 7.928-7.929 7.928z"
-                        fill="#eab224"
+                        fill="#07070f"
+                        d="M199 404c-11 0-10-4-13-14l-32-105 245-144"
+                      />
+                      <path
+                        fill="#07070f"
+                        d="M199 404c7 0 11-4 16-8l45-43-56-34"
+                      />
+                      <path
+                        fill="#07070f"
+                        d="M204 319l135 99c14 9 26 4 30-14l55-258c5-22-9-32-24-25L79 245c-21 8-21 21-4 26l83 26 190-121c9-5 17-3 11 4"
                       />
                     </svg>
                   </a>
                 </div>
+                <Foto/>
               </div>
             </aside>
             <section className="col-12 col-lg-5 col-xl-6 ">
