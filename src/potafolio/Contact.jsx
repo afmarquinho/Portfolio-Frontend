@@ -52,7 +52,7 @@ const Contact = () => {
   };
   return (
     <>
-      <h2 className=" title contact__me">Contact me</h2>
+      <h2 className=" title contact__me" id="contact-me">Contact me</h2>
       <Container>
         <div className="content__container w-100">
           <div>
