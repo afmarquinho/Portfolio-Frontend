@@ -62,6 +62,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
+        <br />
         {loading ? (
           <>
             <div className="sk-chase">
