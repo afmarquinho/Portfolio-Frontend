@@ -52,7 +52,7 @@ const Contact = () => {
   };
   return (
     <>
-      <h2 className=" title contact__me" id="contact-me">Contact me</h2>
+      <Subtitulos className=" title contact__me" id="contact-me">Contact me</Subtitulos>
       <Container>
         <div className="content__container w-100">
           <div>
@@ -227,4 +227,7 @@ const Success = styled.p`
   background-color: #00c3ff;
   border: none;
   text-align: center;
+`;
+const Subtitulos = styled.h2`
+  color: #a0e9ff;
 `;

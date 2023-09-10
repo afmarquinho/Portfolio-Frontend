@@ -23,7 +23,7 @@ const Navbar = () => {
         </StyledLink>
         <StyledLink
           className="link btn__download"
-          // href="https://drive.google.com/uc?export=download&id=11AYxLF7h9fThXf2c0BJcIGfWrNKh-gDn"
+          href="https://drive.google.com/file/d/1oJMNsrIxFFK31QPR-lxbBR8jIpdRO7z1/view?usp=sharing"
           target="_blank"
           download
         >
@@ -89,7 +89,6 @@ const StyledLink = styled.a`
     left: 0;
     width: 100%;
     height: 100%;
-
     background: #fda500;
     transition: 0.5s;
     transform: scale(0);
@@ -97,7 +96,7 @@ const StyledLink = styled.a`
     z-index: -1;
   }
   &:hover {
-    color:  #07070f;
+    color: #07070f;
     font-weight: bold;
     &::before {
       transform: scale(1);

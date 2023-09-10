@@ -12,7 +12,7 @@ const Home = () => {
           <div className="row d-flex justify-btw">
             <aside className="col-12 col-lg-3 col-xl-4 ">
               <h1 className="mi_nombre">Marco Fernández</h1>
-              <p className="front m-0">MERN Stack Developer</p>
+              <p className="front m-0">Jr Full Stack Developer (MERN)</p>
               <p className="profession m-0">Industrial Administrator</p>
               <p className="make__happen m-0">
                 <span className="make"> &lt;make&gt;</span> it happen
@@ -60,7 +60,7 @@ const Home = () => {
                     target="_blank"
                     className="sociales telegram"
                   >
-                      <svg
+                    <svg
                       xmlns="http://www.w3.org/2000/svg"
                       aria-label="Telegram"
                       role="img"
@@ -84,53 +84,53 @@ const Home = () => {
                     </svg>
                   </a>
                 </div>
-                <Foto/>
+                <Foto />
               </div>
             </aside>
             <section className="col-12 col-lg-5 col-xl-6 ">
               <div className="article article1 my-5">
-                <h2 id="doForU" className="title">
-                  What Can I do for you?
-                </h2>
+                <Subtitulos id="doForU" className="title">
+                  Summary
+                </Subtitulos>
                 <p className="content text-justify">
-                  I have a solid foundation in HTML, CSS, and JavaScript, and I
-                  am eager to apply my skills to your project. I can create
-                  responsive, user-friendly websites and applications that
-                  provide an exceptional user experience.
+                  As a MERN Stack Developer, I bring a strong foundation in
+                  MongoDB, Express.js, React, and Node.js. Eager to tackle new
+                  challenges and learn from experienced peers, I'm dedicated to
+                  building dynamic web applications. Excited to contribute to
+                  innovative projects and grow as a developer in a collaborative
+                  environment.
                 </p>
               </div>
               <div className="article article2 my-5">
-                <h2 className="title about__me" id="about-me">
+                <Subtitulos className="title about__me" id="about-me">
                   About me
-                </h2>
-                <h3 className="summary">Summary</h3>
+                </Subtitulos>
                 <p className="text-justify">
-                  I have a good understanding of HTML, CSS, and JavaScript, and
-                  I'm familiar with popular front-end frameworks such as React.
-                  I stay up to date with industry trends and best practices, I
-                  am also dedicated to improving my skills and seeking feedback
-                  from more experienced developers.
+                  Passionate about web development. Well-versed in the MERN
+                  stack, I blend creativity and technical skills into every
+                  project. My dedication to continual improvement and staying
+                  updated with emerging technologies drives my professional
+                  journey.{" "}
                 </p>
                 <p className="text-justify">
-                  I'm able to work closely with designers, back-end developers,
-                  and other stakeholders on web development projects.work well
-                  in a team and am passionate about web development.
+                  I'm eager to discuss how my skills and commitment can
+                  contribute to your team's success. Let's connect and explore
+                  the potential we can unlock together.
                 </p>
                 <h3 className="education">Education</h3>
-
                 <ul>
                   <li> Front-End developer - course - Alura Ltam - current.</li>
                   <li> Programming - course - MinTic - Uninorte - 2022.</li>
                   <li> Industrial Administration - Bachelor degree - 2013.</li>
                 </ul>
-
-                <h3 className="info">More Info</h3>
+                <h3 className="info">Skills</h3>
                 <ul>
-                  <li>Based on Colombia.</li>
-                  <li>Available to travel.</li>
-                  <li>Hobbies: MMA - Swimming - Exercising.</li>
+                  <li>HTML, CSS, JS.</li>
+                  <li>React, Styled components, Bootstrap.</li>
+                  <li>Node, Express, Mongoose, MongoDB.</li>
+                  <li>Git, GutHub, Figma, Tailwind.</li>
                 </ul>
-                <h2 className="languages">Languages</h2>
+                <h3 className="languages">Languages</h3>
                 <div className="all">
                   <div className="circular-wrap">
                     <div className="circle">
@@ -187,33 +187,23 @@ const Home = () => {
                     </div>
                   </div>
                 </div>
+                <h3 className="info">More Info</h3>
+                <ul>
+                  <li>Based on Colombia.</li>
+                  <li>Available to travel.</li>
+                  <li>Hobbies: MMA - Swimming - Exercising.</li>
+                </ul>
               </div>
-
               <div className="article article2 my-5">
-                <h2 className="title portfolio" id="portfolio">
+                <Subtitulos className="title portfolio" id="portfolio">
                   Portfolio
-                </h2>
-                <div className="project project1">
-                  <h3 className="tasky">TASKY</h3>
-                  <p className="text-justify">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Error corporis deleniti a eveniet delectus officiis
-                    doloribus voluptatibus, eos illum accusamus.
-                    <a href="www.google.com" className="see-project mx-3">
-                      CHECK
-                    </a>
-                    <br />
-                    <span className="">React</span>
-                    <span className="">Styled-Components</span>
-                    <span className="">Localhost</span>
-                  </p>
-                </div>
+                </Subtitulos>
                 <div className="project project2">
                   <h3 className="lean-gineers">LEAN GINEERS WEB SITE</h3>
                   <p className="text-justify">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Error corporis deleniti a eveniet delectus officiis
-                    doloribus voluptatibus, eos illum accusamus.
+                    Under Construction Website. LeanGineers' company website
+                    showcasing the company's portfolio and service offerings,
+                    featuring a blog page and a contact form.
                     <a href="www.google.com" className="see-project mx-3">
                       CHECK
                     </a>
@@ -229,9 +219,7 @@ const Home = () => {
                 <div className="project project2">
                   <h3 className="Kassya Projects">KASSYA PROJECTS</h3>
                   <p className="text-justify">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                    Error corporis deleniti a eveniet delectus officiis
-                    doloribus voluptatibus, eos illum accusamus.
+                    Under Construction Website. E-commerce
                     <a href="www.google.com" className="see-project mx-3">
                       CHECK
                     </a>
@@ -243,6 +231,27 @@ const Home = () => {
                     <span className="">Axios</span>
                     <span className="">Express</span>
                     <span className="">Mongo DB</span>
+                  </p>
+                </div>
+                <div className="project project1">
+                  <h3 className="tasky">TASKY</h3>
+                  <p className="text-justify">
+                    Front-end application for managing pending tasks, the form
+                    includes the necessary validations to create an event. In
+                    addition to creating events, they can be updated and
+                    deleted. Furthermore, each event is saved in the user's
+                    browser.
+                    <a
+                      href="https://superlative-mooncake-1a32e9.netlify.app"
+                      target="blank"
+                      className="see-project mx-3"
+                    >
+                      CHECK
+                    </a>
+                    <br />
+                    <span className="">React</span>
+                    <span className="">Styled-Components</span>
+                    <span className="">Localhost</span>
                   </p>
                 </div>
               </div>
@@ -259,13 +268,6 @@ const Home = () => {
 
 export default Home;
 
-const Subtitulos = styled.h3`
-  color: #77dd77;
-  font-size: 1.5rem;
-  margin: 0;
-  padding: 0;
-  @media (min-width: 768px) {
-    padding-left: 4rem;
-    font-size: 2rem;
-  }
+const Subtitulos = styled.h2`
+  color: #a0e9ff;
 `;
