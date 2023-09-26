@@ -208,7 +208,8 @@ img {
   margin: 2.5rem 0 0 0;
 }
 .project .see-project {
-  color: var(--resaltado);
+  color: var(--amarillo);
+  text-decoration: underline;
 }
 .project span {
   color: var(--resaltado);

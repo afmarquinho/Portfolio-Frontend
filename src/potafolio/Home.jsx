@@ -199,13 +199,24 @@ const Home = () => {
                   Portfolio
                 </Subtitulos>
                 <div className="project project2">
-                  <h3 className="lean-gineers">LEAN GINEERS WEB SITE</h3>
+                  <h3 className="lean-gineers">LEAN GINEERS WEB SITE + PLATFORM</h3>
                   <p className="text-justify">
                     Under Construction Website. LeanGineers' company website
                     showcasing the company's portfolio and service offerings,
                     featuring a blog page and a contact form.
-                    <a href="www.google.com" className="see-project mx-3">
-                      CHECK
+                    <a
+                      href="https://lean-gineers-front-35vmhfyfg-afmarquinho.vercel.app/"
+                      target="blank"
+                      className="see-project mx-3"
+                    >
+                      View deployment
+                    </a>
+                    <a
+                      href="https://github.com/afmarquinho/LeanGineers-FrontEnd"
+                      target="blank"
+                      className="see-project mx-3"
+                    >
+                      Check repository
                     </a>
                     <br />
                     <span className="">React</span>
@@ -217,19 +228,34 @@ const Home = () => {
                   </p>
                 </div>
                 <div className="project project2">
-                  <h3 className="Kassya Projects">KASSYA PROJECTS</h3>
+                  <h3 className="Kassya Projects">KASSYA MANAGEMENT</h3>
                   <p className="text-justify">
-                    Under Construction Website. E-commerce
-                    <a href="www.google.com" className="see-project mx-3">
-                      CHECK
+                    Fullstack (MERN) project in development, it is an ERP for
+                    business process management. It consists of 12 modules,
+                    including projects, purchasing, and human resources, among
+                    others.
+                    <a
+                      href="https://tiny-horse-6baf33.netlify.app/"
+                      target="blank"
+                      className="see-project mx-3"
+                    >
+                      View deployment
+                    </a>
+                    <a
+                      href="https://github.com/afmarquinho/KassyaApp"
+                      target="blank"
+                      className="see-project mx-3"
+                    >
+                      Check repository
                     </a>
                     <br />
                     <span className="">React</span>
                     <span className="">Styled-Components</span>
-                    <span className="">Bootstrap</span>
                     <span className="">Context-API</span>
+                    <span className="">Bootstrap</span>
                     <span className="">Axios</span>
                     <span className="">Express</span>
+                    <span className="">Mongoose</span>
                     <span className="">Mongo DB</span>
                   </p>
                 </div>
@@ -246,7 +272,14 @@ const Home = () => {
                       target="blank"
                       className="see-project mx-3"
                     >
-                      CHECK
+                      View deployment
+                    </a>
+                    <a
+                      href="https://github.com/afmarquinho/TO-DO-TASK"
+                      target="blank"
+                      className="see-project mx-3"
+                    >
+                      Check repository
                     </a>
                     <br />
                     <span className="">React</span>
