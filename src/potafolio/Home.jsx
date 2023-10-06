@@ -126,9 +126,10 @@ const Home = () => {
                 <h3 className="info">Skills</h3>
                 <ul>
                   <li>HTML, CSS, JS.</li>
-                  <li>React, Styled components, Bootstrap.</li>
+                  <li>React, Redux, Context API, Hooks.</li>
+                  <li>Styled Components, Bootstrap, Saas, Tailwind .</li>
                   <li>Node, Express, Mongoose, MongoDB.</li>
-                  <li>Git, GutHub, Figma, Tailwind.</li>
+                  <li>Git, GutHub, Figma.</li>
                 </ul>
                 <h3 className="languages">Languages</h3>
                 <div className="all">
@@ -198,10 +199,50 @@ const Home = () => {
                 <Subtitulos className="title portfolio" id="portfolio">
                   Portfolio
                 </Subtitulos>
+                <div className="project project1">
+                  <h3 className="Kassya Projects">KASSYA MANAGEMENT</h3>
+                  <p className="text-justify">
+                    Fullstack (MERN) project in development, it is an ERP for
+                    business process management. It consists of 12 modules,
+                    including projects, purchasing, and human resources, among
+                    others.
+                    <a
+                      href="https://fanciful-sunshine-ce912f.netlify.app/"
+                      target="blank"
+                      className="see-project mx-3"
+                    >
+                      View deployment
+                    </a>
+                    <a
+                      href="https://github.com/afmarquinho/KassyaManagement-Frontend"
+                      target="blank"
+                      className="see-project mx-3"
+                    >
+                      Frontend repository
+                    </a>
+                    <a
+                      href="https://github.com/afmarquinho/KassyaManagement-Backend"
+                      target="blank"
+                      className="see-project mx-3"
+                    >
+                      Backend repository
+                    </a>
+                    <br />
+                    <span className="">React</span>
+                    <span className="">Styled-Components</span>
+                    <span className="">Redux</span>
+                    <span className="">Bootstrap</span>
+                    <span className="">Axios</span>
+                    <span className="">Express</span>
+                    <span className="">Mongoose</span>
+                    <span className="">Mongo DB</span>
+                    <span className="">JWT</span>
+                  </p>
+                </div>
                 <div className="project project2">
                   <h3 className="lean-gineers">LEAN GINEERS WEB SITE + PLATFORM</h3>
                   <p className="text-justify">
-                    Under Construction Website. LeanGineers' company website
+                    Under Construction Website. LeanGineer´s company website
                     showcasing the company's portfolio and service offerings,
                     featuring a blog page and a contact form.
                     <a
@@ -227,39 +268,8 @@ const Home = () => {
                     <span className="">Mongo DB</span>
                   </p>
                 </div>
-                <div className="project project2">
-                  <h3 className="Kassya Projects">KASSYA MANAGEMENT</h3>
-                  <p className="text-justify">
-                    Fullstack (MERN) project in development, it is an ERP for
-                    business process management. It consists of 12 modules,
-                    including projects, purchasing, and human resources, among
-                    others.
-                    <a
-                      href="https://tiny-horse-6baf33.netlify.app/"
-                      target="blank"
-                      className="see-project mx-3"
-                    >
-                      View deployment
-                    </a>
-                    <a
-                      href="https://github.com/afmarquinho/KassyaApp"
-                      target="blank"
-                      className="see-project mx-3"
-                    >
-                      Check repository
-                    </a>
-                    <br />
-                    <span className="">React</span>
-                    <span className="">Styled-Components</span>
-                    <span className="">Context-API</span>
-                    <span className="">Bootstrap</span>
-                    <span className="">Axios</span>
-                    <span className="">Express</span>
-                    <span className="">Mongoose</span>
-                    <span className="">Mongo DB</span>
-                  </p>
-                </div>
-                <div className="project project1">
+
+                <div className="project project3">
                   <h3 className="tasky">TASKY</h3>
                   <p className="text-justify">
                     Front-end application for managing pending tasks, the form
