@@ -12,7 +12,7 @@ const Home = () => {
           <div className="row d-flex justify-btw">
             <aside className="col-12 col-lg-3 col-xl-4 ">
               <h1 className="mi_nombre">Marco Fernández</h1>
-              <p className="front m-0">Jr Full Stack Developer (MERN)</p>
+              <p className="front m-0">Jr Full Stack Developer (MERN, MEVN)</p>
               <p className="profession m-0">Industrial Administrator</p>
               <p className="make__happen m-0">
                 <span className="make"> &lt;make&gt;</span> it happen
@@ -94,7 +94,7 @@ const Home = () => {
                 </Subtitulos>
                 <p className="content text-justify">
                   As a MERN Stack Developer, I bring a strong foundation in
-                  MongoDB, Express.js, React, and Node.js. Eager to tackle new
+                  MongoDB, Express.js, React, Vue, and Node.js. Eager to tackle new
                   challenges and learn from experienced peers, I'm dedicated to
                   building dynamic web applications. Excited to contribute to
                   innovative projects and grow as a developer in a collaborative
@@ -126,8 +126,8 @@ const Home = () => {
                 <h3 className="info">Skills</h3>
                 <ul>
                   <li>HTML, CSS, JS.</li>
-                  <li>React, Redux, Context API, Hooks.</li>
-                  <li>Styled Components, Bootstrap, Saas, Tailwind .</li>
+                  <li>React, Vue Redux, Context API, Hooks.</li>
+                  <li>Styled Components, Bootstrap, Saas, Tailwind Element Plus.</li>
                   <li>Node, Express, Mongoose, MongoDB.</li>
                   <li>Git, GutHub, Figma.</li>
                 </ul>
