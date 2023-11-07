@@ -126,8 +126,8 @@ const Home = () => {
                 <h3 className="info">Skills</h3>
                 <ul>
                   <li>HTML, CSS, JS.</li>
-                  <li>React, Vue Redux, Context API, Hooks.</li>
-                  <li>Styled Components, Bootstrap, Saas, Tailwind Element Plus.</li>
+                  <li>React, Vue, Redux, Context API, Hooks.</li>
+                  <li>Styled Components, Bootstrap, Saas, Tailwind, Element Plus.</li>
                   <li>Node, Express, Mongoose, MongoDB.</li>
                   <li>Git, GutHub, Figma.</li>
                 </ul>
@@ -203,9 +203,8 @@ const Home = () => {
                   <h3 className="Kassya Projects">KASSYA MANAGEMENT</h3>
                   <p className="text-justify">
                     Fullstack (MERN) project in development, it is an ERP for
-                    business process management. It consists of 12 modules,
-                    including projects, purchasing, and human resources, among
-                    others.
+                    supply chain processes management. It consists of 3 modules,
+                    purchasing, suppliers and inventory.
                     <a
                       href="https://fanciful-sunshine-ce912f.netlify.app/"
                       target="blank"
@@ -231,7 +230,7 @@ const Home = () => {
                     <span className="">React</span>
                     <span className="">Styled-Components</span>
                     <span className="">Redux</span>
-                    <span className="">Bootstrap</span>
+                    <span className="">Tailwind Css</span>
                     <span className="">Axios</span>
                     <span className="">Express</span>
                     <span className="">Mongoose</span>
